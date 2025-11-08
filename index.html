@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToWatch</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div class="splash">
+        <img src="logo-splash.png" alt="Logo on Splash" class="logo">
+    </div>
+    
+    <!-- Search Bar -->
+    <form class="input-form">
+        <input type="text" class="user-input" placeholder="Search for a TV show or movie">
+        <i class="fa-solid fa-magnifying-glass search-btn"></i>
+    </form>
+
+    <!-- Searched Shows Container -->
+    <div class="search-shows-wrapper">
+        <ul class="show-list">
+        </ul>
+    </div>
+    
+    <!-- Watchlist Container -->
+    <div class="watch-list-container">
+        <h2 class="my-watchlist">My Watchlist</h2>
+        <p class="no-show-added">No shows added yet.</p>
+        <ul class="watch-list-wrapper">
+        </ul>
+    </div>
+
+    <!-- Modal for Edit -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Watch Status:</p>
+            <form>
+                <input type="radio" name="watch_status" id="unwatched" value="Not Watched" checked>
+                <label for="unwatched">To watch</label><br>
+                <input type="radio" name="watch_status" id="ongoing" value="Ongoing">
+                <label for="ongoing">Ongoing</label><br>
+                <input type="radio" name="watch_status" id="finished" value="Finished">
+                <label for="finished">Finished</label><br>
+                <button type="button" class="confirm-btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+    
+    <script defer src="https://kit.fontawesome.com/5a48add127.js" crossorigin="anonymous"></script>
+</body>
+</html>
