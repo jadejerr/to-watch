@@ -85,7 +85,7 @@ h1, h2, h3{
 .search-shows-wrapper{
     width: 1000px;
     margin-top: 20px;
-    max-height: 470px;
+    max-height: 380px;
     overflow-y: scroll;
     justify-self: center;
 }
@@ -362,7 +362,7 @@ body.loaded > *:not(.splash) {
     .search-shows-wrapper{
         width: 500px;
         margin-top: 20px;
-        max-height: 470px;
+        max-height: 380px;
         overflow-y: scroll;
         justify-self: center;
     }
@@ -404,23 +404,10 @@ body.loaded > *:not(.splash) {
         gap: 0px;
     }
 
-    .tv-list{
-        background-color: var(--bg-secondary);
-        border-radius: 10px;
-        height: 200px;
-        width: 400px;
-        display: flex;
-        padding: 0px 30px;
-        margin-bottom: 10px;
-        margin-left: -40px;
-        align-items: center;
-        justify-content: space-between;
-    }
-
+    .tv-list,
     .tv-list.watchlist-added{
         background-color: var(--bg-secondary);
         border-radius: 10px;
-        height: 370px;
         width: 250px;
         display: flex;
         flex-direction: column;
@@ -431,19 +418,21 @@ body.loaded > *:not(.splash) {
         justify-content: space-between;
     }
 
-    .search-shows-wrapper .content-div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 250px;
-        max-height: 200px;
+    .tv-list{
+        height: 330px;
     }
 
+    .tv-list.watchlist-added{
+        height: 370px;
+    }
+
+    .search-shows-wrapper .content-div,
     .watch-list-wrapper .content-div{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 250px;
+        max-height: 200px;
     }
 
     .action-btn-div{
@@ -453,7 +442,7 @@ body.loaded > *:not(.splash) {
         margin-right: 25px;
     }   
 
-    .watch-list-container .tv-img{
+    .tv-img{
         height: 180px;
         border-radius: 3px;
         margin-top: 10px;
