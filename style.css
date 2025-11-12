@@ -84,10 +84,12 @@ h1, h2, h3{
 
 .search-shows-wrapper{
     width: 1000px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
     max-height: 380px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
     overflow-y: scroll;
 }
 
