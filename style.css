@@ -376,6 +376,7 @@ body.loaded > *:not(.splash) {
 /* Max width 768px (Tablet & Mobile) */
 @media screen and (max-width: 768px){
     .search-shows-wrapper{
+        width: 330px;
         margin-top: 20px;
         max-height: 380px;
         overflow-y: scroll;
