@@ -181,6 +181,10 @@ h1, h2, h3{
     margin-right: 5px;
 }
 
+.tv-genre:nth-child(n+3){
+    margin-top: -7px;
+}
+
 .status-badge{
     background-color: var(--status-notwatched-bg);
     color: var(--status-notwatched-text);
@@ -372,7 +376,6 @@ body.loaded > *:not(.splash) {
 /* Max width 768px (Tablet & Mobile) */
 @media screen and (max-width: 768px){
     .search-shows-wrapper{
-        width: 0px;
         margin-top: 20px;
         max-height: 380px;
         overflow-y: scroll;
@@ -401,7 +404,19 @@ body.loaded > *:not(.splash) {
         gap: 0px;
     }
 
-    .tv-list,
+    .tv-list{
+        background-color: var(--bg-secondary);
+        border-radius: 10px;
+        height: 200px;
+        width: 400px;
+        display: flex;
+        padding: 0px 30px;
+        margin-bottom: 10px;
+        margin-left: -40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .tv-list.watchlist-added{
         background-color: var(--bg-secondary);
         border-radius: 10px;
@@ -409,7 +424,7 @@ body.loaded > *:not(.splash) {
         width: 250px;
         display: flex;
         flex-direction: column;
-        padding: 0px 30px;
+        padding: 5px 30px;
         margin-bottom: 10px;
         margin-left: -40px;
         align-items: center;
@@ -420,7 +435,7 @@ body.loaded > *:not(.splash) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 200px;
+        width: 250px;
         max-height: 200px;
     }
 
@@ -438,7 +453,7 @@ body.loaded > *:not(.splash) {
         margin-right: 25px;
     }   
 
-    .tv-img{
+    .watch-list-container .tv-img{
         height: 180px;
         border-radius: 3px;
         margin-top: 10px;
@@ -450,6 +465,10 @@ body.loaded > *:not(.splash) {
 
     .text-wrapper h3{
         max-width: 180px;
+    }
+
+    .watch-list-container .text-wrapper h3{
+        margin-bottom: -10px;
     }
 
     .logo {
