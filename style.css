@@ -85,9 +85,10 @@ h1, h2, h3{
 .search-shows-wrapper{
     width: 1000px;
     margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
     max-height: 380px;
     overflow-y: scroll;
-    justify-self: center;
 }
 
 .search-shows-wrapper::-webkit-scrollbar{
