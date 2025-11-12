@@ -83,11 +83,12 @@ h1, h2, h3{
 }
 
 .search-shows-wrapper{
-    width: 1000px;
+    width: 950px;
     max-height: 380px;
     margin-top: 20px;
     overflow-y: scroll;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .search-shows-wrapper::-webkit-scrollbar{
@@ -118,7 +119,6 @@ h1, h2, h3{
     display: flex;
     padding: 0px 30px;
     margin-bottom: -40px;
-    margin-left: -40px;
     align-items: center;
     justify-content: space-between;
 }
@@ -361,9 +361,6 @@ body.loaded > *:not(.splash) {
 @media screen and (max-width: 992px){
     .search-shows-wrapper{
         width: 500px;
-        margin-top: 20px;
-        max-height: 380px;
-        overflow-y: scroll;
     }
 
     .logo {
@@ -376,13 +373,6 @@ body.loaded > *:not(.splash) {
 @media screen and (max-width: 768px){
     .search-shows-wrapper{
         width: 330px;
-        margin-top: 20px;
-        max-height: 380px;
-        overflow-y: scroll;
-    }
-
-    .search-shows-wrapper::-webkit-scrollbar{
-        display: none;
     }
 
     .show-list{
@@ -412,7 +402,6 @@ body.loaded > *:not(.splash) {
         flex-direction: column;
         padding: 5px 30px;
         margin-bottom: 10px;
-        margin-left: -40px;
         align-items: center;
         justify-content: space-between;
     }
