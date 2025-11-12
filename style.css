@@ -86,11 +86,8 @@ h1, h2, h3{
     width: 1000px;
     max-height: 380px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
     overflow-y: scroll;
+    justify-self: center;
 }
 
 .search-shows-wrapper::-webkit-scrollbar{
@@ -367,7 +364,6 @@ body.loaded > *:not(.splash) {
         margin-top: 20px;
         max-height: 380px;
         overflow-y: scroll;
-        justify-self: center;
     }
 
     .logo {
@@ -383,7 +379,6 @@ body.loaded > *:not(.splash) {
         margin-top: 20px;
         max-height: 380px;
         overflow-y: scroll;
-        justify-self: center;
     }
 
     .search-shows-wrapper::-webkit-scrollbar{
